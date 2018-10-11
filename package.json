@@ -1,0 +1,21 @@
+{
+  "name": "third",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "elasticsearch": "^15.1.1",
+    "express": "^4.16.4",
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2",
+    "graphql-compose": "^5.2.0",
+    "graphql-compose-elasticsearch": "^2.1.0"
+  },
+  "scripts": {
+    "start":"yarn seed && babel-node index.js",
+    "seed":"babel-node seedData.js"
+  }
+}
